@@ -20,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // New 一个Model 出来，该Model具有登陆逻辑
         final UserService userService = new UserService();
         mEtUserName = findViewById(R.id.etUserName);
         mEtPassword = findViewById(R.id.etPassword);

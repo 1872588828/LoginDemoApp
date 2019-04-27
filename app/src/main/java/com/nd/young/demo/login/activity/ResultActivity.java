@@ -24,6 +24,7 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         boolean result = getIntent().getBooleanExtra(PARAM_RESULT, false);
+        // 判断是否成功，成功显示Logout，失败不显示
         findViewById(R.id.btnLogout).setVisibility(result ? View.VISIBLE : View.GONE);
         findViewById(R.id.btnLogout).setOnClickListener(new View.OnClickListener() {
             @Override
